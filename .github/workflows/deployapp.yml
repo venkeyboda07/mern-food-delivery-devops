@@ -33,4 +33,12 @@ jobs:
       run: |
         cd backend
         docker build -t backend-node .
+        
+    # Tag Images
+    - name: Tag Docker Images
+      run: |
+        docker tag frontend-app:latest \
+        ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-south-1.amazonaws.com/frontend-app:latest
 
+        docker tag backend-node:latest \
+        ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-south-1.amazonaws.com/backend-node:latest
