@@ -52,7 +52,7 @@ MongoDB Atlas
 
 # 📸 Architecture Diagram
 
-![Architecture](Images/architecture.jpg)
+![Architecture](Images/Architecture.jpg)
 
 ---
 
